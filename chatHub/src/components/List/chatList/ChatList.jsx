@@ -18,10 +18,12 @@ const ChatList = () => {
         <img
           className="add"
           src={addMode ? minus : plus}
-          alt="" //When you use {minus} and {plus}, you're treating minus and plus as objects, but src expects a string (the file path or URL). This causes the images to not be displayed correctly
-          onClick={() => setAddMode((prev) => !prev)} //When you call the setAddMode function with an arrow function, React passes the current (or "previous") state as an argument to that function
+          alt=""
+          onClick={() => setAddMode((prev) => !prev)}
         />
       </div>
+      
+      {/* Chat items */}
       <div className="item">
         <img src={avatar} alt="" />
         <div className="texts">
@@ -32,15 +34,36 @@ const ChatList = () => {
       <div className="item">
         <img src={avatar} alt="" />
         <div className="texts">
-          <span>Jane Doe</span>
-          <p>Hello</p>
+          <span>John Smith</span>
+          <p>Good morning</p>
         </div>
       </div>
       <div className="item">
         <img src={avatar} alt="" />
         <div className="texts">
-          <span>Jane Doe</span>
-          <p>Hello</p>
+          <span>Emily Clark</span>
+          <p>How are you?</p>
+        </div>
+      </div>
+      <div className="item">
+        <img src={avatar} alt="" />
+        <div className="texts">
+          <span>Michael Johnson</span>
+          <p>Let's meet up</p>
+        </div>
+      </div>
+      <div className="item">
+        <img src={avatar} alt="" />
+        <div className="texts">
+          <span>Sarah Lee</span>
+          <p>See you soon!</p>
+        </div>
+      </div>
+      <div className="item">
+        <img src={avatar} alt="" />
+        <div className="texts">
+          <span>David Brown</span>
+          <p>Take care</p>
         </div>
       </div>
     </div>

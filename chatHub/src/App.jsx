@@ -8,8 +8,8 @@
       <>
         <div className="container">
           <List/>
-          <Detail/>
           <Chat/>
+          <Detail/>
         </div>
       </>
     )
