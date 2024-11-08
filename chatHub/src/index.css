@@ -16,8 +16,8 @@
   }
 
   .container{
-    width: 90vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(17,25,40,0.75);
     backdrop-filter: blur(19px) saturate(180%); /* use caniuseit.com to know if this can be used or not */
     border-radius: 12px;
